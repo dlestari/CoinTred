@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0416B12927EF75AB00601E7F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416B12727EF75AB00601E7F /* DetailViewController.swift */; };
+		0416B12A27EF75AB00601E7F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0416B12827EF75AB00601E7F /* DetailViewController.xib */; };
+		044862C227DF83BC00EDA842 /* CoinMarketModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044862C127DF83BC00EDA842 /* CoinMarketModelResponse.swift */; };
+		044862C427DF8AC700EDA842 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044862C327DF8AC700EDA842 /* MarketViewModel.swift */; };
+		047AA73727E21D46002EDAFB /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AA73627E21D46002EDAFB /* Extention.swift */; };
+		04B262D428192B3F00371954 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B262D328192B3F00371954 /* BaseViewController.swift */; };
+		04CE21A427DCB41C001396BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21A327DCB41C001396BA /* AppDelegate.swift */; };
+		04CE21A627DCB41C001396BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21A527DCB41C001396BA /* SceneDelegate.swift */; };
+		04CE21A827DCB41C001396BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21A727DCB41C001396BA /* ViewController.swift */; };
+		04CE21AB27DCB41C001396BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE21A927DCB41C001396BA /* Main.storyboard */; };
+		04CE21AD27DCB41F001396BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CE21AC27DCB41F001396BA /* Assets.xcassets */; };
+		04CE21B027DCB41F001396BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CE21AE27DCB41F001396BA /* LaunchScreen.storyboard */; };
+		04CE21BD27DCCFDE001396BA /* CoinViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21BB27DCCFDD001396BA /* CoinViewCell.swift */; };
+		04CE21BE27DCCFDE001396BA /* CoinViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CE21BC27DCCFDE001396BA /* CoinViewCell.xib */; };
+		04CE21C127DCE61C001396BA /* CoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21C027DCE61C001396BA /* CoinService.swift */; };
+		04CE21C327DCE79B001396BA /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21C227DCE79B001396BA /* Connection.swift */; };
+		04CE21C727DCF27A001396BA /* UrlConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21C627DCF27A001396BA /* UrlConstant.swift */; };
+		04F308C728016BCC00A3A798 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F308C628016BCC00A3A798 /* LoadingView.swift */; };
+		9A5029823698315F13657C70 /* Pods_CoinTred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD8FB74CC16EEA9C244A5B6 /* Pods_CoinTred.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0416B12727EF75AB00601E7F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0416B12827EF75AB00601E7F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		044862C127DF83BC00EDA842 /* CoinMarketModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketModelResponse.swift; sourceTree = "<group>"; };
+		044862C327DF8AC700EDA842 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		047AA73627E21D46002EDAFB /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		04B262D328192B3F00371954 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		04CE21A027DCB41C001396BA /* CoinTred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTred.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CE21A327DCB41C001396BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04CE21A527DCB41C001396BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04CE21A727DCB41C001396BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04CE21AA27DCB41C001396BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CE21AC27DCB41F001396BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CE21AF27DCB41F001396BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04CE21B127DCB41F001396BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CE21BB27DCCFDD001396BA /* CoinViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewCell.swift; sourceTree = "<group>"; };
+		04CE21BC27DCCFDE001396BA /* CoinViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinViewCell.xib; sourceTree = "<group>"; };
+		04CE21C027DCE61C001396BA /* CoinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinService.swift; sourceTree = "<group>"; };
+		04CE21C227DCE79B001396BA /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		04CE21C627DCF27A001396BA /* UrlConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlConstant.swift; sourceTree = "<group>"; };
+		04F308C628016BCC00A3A798 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		77222AC38728B3F7DFE08998 /* Pods-CoinTred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTred.debug.xcconfig"; path = "Target Support Files/Pods-CoinTred/Pods-CoinTred.debug.xcconfig"; sourceTree = "<group>"; };
+		88E2648BA4607121887B2ECA /* Pods-CoinTred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinTred.release.xcconfig"; path = "Target Support Files/Pods-CoinTred/Pods-CoinTred.release.xcconfig"; sourceTree = "<group>"; };
+		EFD8FB74CC16EEA9C244A5B6 /* Pods_CoinTred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinTred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CE219D27DCB41C001396BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5029823698315F13657C70 /* Pods_CoinTred.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047AA73527E21D2F002EDAFB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				047AA73627E21D46002EDAFB /* Extention.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		04CE219727DCB41C001396BA = {
+			isa = PBXGroup;
+			children = (
+				04CE21A227DCB41C001396BA /* CoinTred */,
+				04CE21A127DCB41C001396BA /* Products */,
+				F5082B42F51255C158391D85 /* Pods */,
+				533AD5483B490636384F3593 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04CE21A127DCB41C001396BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CE21A027DCB41C001396BA /* CoinTred.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CE21A227DCB41C001396BA /* CoinTred */ = {
+			isa = PBXGroup;
+			children = (
+				047AA73527E21D2F002EDAFB /* Helper */,
+				04CE21BF27DCE2DD001396BA /* Base */,
+				04CE21C827DCF281001396BA /* Services */,
+				04CE21BA27DCC9A4001396BA /* ViewController */,
+				04CE21B927DCC991001396BA /* ViewModel */,
+				04CE21B827DCC988001396BA /* View */,
+				04CE21B727DCC980001396BA /* Model */,
+				04CE21A327DCB41C001396BA /* AppDelegate.swift */,
+				04CE21A527DCB41C001396BA /* SceneDelegate.swift */,
+				04CE21AC27DCB41F001396BA /* Assets.xcassets */,
+				04CE21AE27DCB41F001396BA /* LaunchScreen.storyboard */,
+				04CE21B127DCB41F001396BA /* Info.plist */,
+			);
+			path = CoinTred;
+			sourceTree = "<group>";
+		};
+		04CE21B727DCC980001396BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				044862C127DF83BC00EDA842 /* CoinMarketModelResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04CE21B827DCC988001396BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04CE21BB27DCCFDD001396BA /* CoinViewCell.swift */,
+				04CE21BC27DCCFDE001396BA /* CoinViewCell.xib */,
+				04F308C628016BCC00A3A798 /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04CE21B927DCC991001396BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				044862C327DF8AC700EDA842 /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		04CE21BA27DCC9A4001396BA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04CE21A927DCB41C001396BA /* Main.storyboard */,
+				04CE21A727DCB41C001396BA /* ViewController.swift */,
+				0416B12727EF75AB00601E7F /* DetailViewController.swift */,
+				0416B12827EF75AB00601E7F /* DetailViewController.xib */,
+				04B262D328192B3F00371954 /* BaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		04CE21BF27DCE2DD001396BA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04CE21C627DCF27A001396BA /* UrlConstant.swift */,
+				04CE21C227DCE79B001396BA /* Connection.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		04CE21C827DCF281001396BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04CE21C027DCE61C001396BA /* CoinService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		533AD5483B490636384F3593 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD8FB74CC16EEA9C244A5B6 /* Pods_CoinTred.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5082B42F51255C158391D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77222AC38728B3F7DFE08998 /* Pods-CoinTred.debug.xcconfig */,
+				88E2648BA4607121887B2ECA /* Pods-CoinTred.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CE219F27DCB41C001396BA /* CoinTred */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CE21B427DCB41F001396BA /* Build configuration list for PBXNativeTarget "CoinTred" */;
+			buildPhases = (
+				6D265912305AC5D12057EB9B /* [CP] Check Pods Manifest.lock */,
+				04CE219C27DCB41C001396BA /* Sources */,
+				04CE219D27DCB41C001396BA /* Frameworks */,
+				04CE219E27DCB41C001396BA /* Resources */,
+				F046DE811AF8FEDE3856C7F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinTred;
+			productName = CoinTred;
+			productReference = 04CE21A027DCB41C001396BA /* CoinTred.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CE219827DCB41C001396BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					04CE219F27DCB41C001396BA = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 04CE219B27DCB41C001396BA /* Build configuration list for PBXProject "CoinTred" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CE219727DCB41C001396BA;
+			productRefGroup = 04CE21A127DCB41C001396BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CE219F27DCB41C001396BA /* CoinTred */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CE219E27DCB41C001396BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CE21B027DCB41F001396BA /* LaunchScreen.storyboard in Resources */,
+				0416B12A27EF75AB00601E7F /* DetailViewController.xib in Resources */,
+				04CE21BE27DCCFDE001396BA /* CoinViewCell.xib in Resources */,
+				04CE21AD27DCB41F001396BA /* Assets.xcassets in Resources */,
+				04CE21AB27DCB41C001396BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D265912305AC5D12057EB9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinTred-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F046DE811AF8FEDE3856C7F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinTred/Pods-CoinTred-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinTred/Pods-CoinTred-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinTred/Pods-CoinTred-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CE219C27DCB41C001396BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CE21A827DCB41C001396BA /* ViewController.swift in Sources */,
+				04CE21C727DCF27A001396BA /* UrlConstant.swift in Sources */,
+				04CE21C327DCE79B001396BA /* Connection.swift in Sources */,
+				0416B12927EF75AB00601E7F /* DetailViewController.swift in Sources */,
+				04CE21BD27DCCFDE001396BA /* CoinViewCell.swift in Sources */,
+				047AA73727E21D46002EDAFB /* Extention.swift in Sources */,
+				04CE21C127DCE61C001396BA /* CoinService.swift in Sources */,
+				04B262D428192B3F00371954 /* BaseViewController.swift in Sources */,
+				044862C427DF8AC700EDA842 /* MarketViewModel.swift in Sources */,
+				04CE21A427DCB41C001396BA /* AppDelegate.swift in Sources */,
+				044862C227DF83BC00EDA842 /* CoinMarketModelResponse.swift in Sources */,
+				04F308C728016BCC00A3A798 /* LoadingView.swift in Sources */,
+				04CE21A627DCB41C001396BA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04CE21A927DCB41C001396BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CE21AA27DCB41C001396BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04CE21AE27DCB41F001396BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CE21AF27DCB41F001396BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CE21B227DCB41F001396BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04CE21B327DCB41F001396BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CE21B527DCB41F001396BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77222AC38728B3F7DFE08998 /* Pods-CoinTred.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LUN7S66RTN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinTred/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwistari.CoinTred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CE21B627DCB41F001396BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E2648BA4607121887B2ECA /* Pods-CoinTred.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LUN7S66RTN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinTred/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwistari.CoinTred;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CE219B27DCB41C001396BA /* Build configuration list for PBXProject "CoinTred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CE21B227DCB41F001396BA /* Debug */,
+				04CE21B327DCB41F001396BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CE21B427DCB41F001396BA /* Build configuration list for PBXNativeTarget "CoinTred" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CE21B527DCB41F001396BA /* Debug */,
+				04CE21B627DCB41F001396BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CE219827DCB41C001396BA /* Project object */;
+}

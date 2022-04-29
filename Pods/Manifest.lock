@@ -1,0 +1,20 @@
+PODS:
+  - SwiftEventBus (5.0.0)
+  - Toaster (2.3.0)
+
+DEPENDENCIES:
+  - SwiftEventBus (= 5.0.0)
+  - Toaster
+
+SPEC REPOS:
+  trunk:
+    - SwiftEventBus
+    - Toaster
+
+SPEC CHECKSUMS:
+  SwiftEventBus: b30f617a6aca5a9336464b4d3f5931034762f2d5
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+
+PODFILE CHECKSUM: fc981d21e0c2c562c80c4eb6a6de6e6071a390b5
+
+COCOAPODS: 1.11.3

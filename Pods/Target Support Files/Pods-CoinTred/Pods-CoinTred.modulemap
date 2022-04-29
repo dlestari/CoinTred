@@ -1,0 +1,6 @@
+framework module Pods_CoinTred {
+  umbrella header "Pods-CoinTred-umbrella.h"
+
+  export *
+  module * { export * }
+}
