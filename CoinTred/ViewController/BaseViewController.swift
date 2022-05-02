@@ -29,6 +29,10 @@ class BaseViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
+    func dismissLoading()  {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func showAlertTimeout() {
         let alert = UIAlertController(title: "The request timed out.", message: "Plase try again!", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))

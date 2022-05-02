@@ -17,7 +17,6 @@ class CoinViewCell: UITableViewCell {
     @IBOutlet weak var container24h: UIView!
     @IBOutlet weak var lblPrice: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupShadow()
@@ -29,9 +28,8 @@ class CoinViewCell: UITableViewCell {
         self.mainView.layer.shadowOpacity = 0.2
         self.mainView.layer.shadowRadius = 2.0
     }
-
     
-    func setupData(data : CoinMarketResponse) {
+    func setupData(data : CoinMarketResponse, currency : String) {
         let percentage24h = data.price_change_percentage_24h ?? 0
         let currentPrice = data.current_price ?? 0
         lblCoinName.text = data.name ?? ""
@@ -40,7 +38,11 @@ class CoinViewCell: UITableViewCell {
         if currentPrice < 1 {
             lblPrice.text = "$\(data.current_price ?? 0) "
         } else {
-            lblPrice.text = data.current_price?.convertToCurrency()
+            if currency == "usd" {
+                lblPrice.text = data.current_price?.convertToCurrency()
+            } else {
+                lblPrice.text = data.current_price?.convertToRpCurrency()
+            }
         }
         lblChange24h.text = "\(String(format: "%.2f", percentage24h))" + "%"
         if percentage24h < 0 {
@@ -54,5 +56,4 @@ class CoinViewCell: UITableViewCell {
             self.imgIcon.image  = UIImage(data: data)
         }
     }
-    
 }

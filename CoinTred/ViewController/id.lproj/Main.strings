@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Last price"; ObjectID = "PAd-sV-VDn"; */
+"PAd-sV-VDn.text" = "Harga Terakhir";
+
+/* Class = "UINavigationItem"; title = "Market"; ObjectID = "hDM-Lf-DQX"; */
+"hDM-Lf-DQX.title" = "Pasar";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "il8-Bn-TzK"; */
+"il8-Bn-TzK.text" = "Nama";
+
+/* Class = "UILabel"; text = "Data not found"; ObjectID = "l2x-hi-00k"; */
+"l2x-hi-00k.text" = "Data tidak ditemukan";
+
+/* Class = "UILabel"; text = "24h Change"; ObjectID = "qDY-Vt-BQR"; */
+"qDY-Vt-BQR.text" = "Perubahan 24j";
+
+/* Class = "UISegmentedControl"; zu2-fw-aAY.segmentTitles[0] = "EN"; ObjectID = "zu2-fw-aAY"; */
+"zu2-fw-aAY.segmentTitles[0]" = "EN";
+
+/* Class = "UISegmentedControl"; zu2-fw-aAY.segmentTitles[1] = "ID"; ObjectID = "zu2-fw-aAY"; */
+"zu2-fw-aAY.segmentTitles[1]" = "ID";

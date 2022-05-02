@@ -7,5 +7,5 @@ target 'CoinTred' do
 
   pod 'Toaster'
   pod 'SwiftEventBus', '5.0.0'
-
+  pod 'Localize-Swift', '3.1.0'
 end

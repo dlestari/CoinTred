@@ -7,15 +7,24 @@
 
 import UIKit
 import Toaster
+import Localize_Swift
 
 class ViewController: BaseViewController {
     
+    
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblLastPrice: UILabel!
+    @IBOutlet weak var lblPriceChange: UILabel!
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var lblEmptyData: UILabel!
+    @IBOutlet weak var switchLang: UISegmentedControl!
+        
     var marketList = [CoinMarketResponse]()
     var page = 0
     var limit = 15
+    var currency = ""
     var isLoading = false
+    var sort = "market_cap_desc"
     
     private lazy var paginationView: LoadingView = {
         let view = LoadingView(height: 24)
@@ -57,18 +66,30 @@ class ViewController: BaseViewController {
         listTableView.register(UINib(nibName: "CoinViewCell", bundle: nil), forCellReuseIdentifier: "CoinViewCell")
     }
 
+    func setLocalizeData() {
+        if Localize.currentLanguage() == "en" {
+            updateLang(str: "en")
+            currency = "usd"
+            switchLang.selectedSegmentIndex = 0
+        } else {
+            updateLang(str: "id")
+            currency = "idr"
+            switchLang.selectedSegmentIndex = 1
+        }
+    }
+    
     func fetchData(pagination : Int) {
-        viewModel.getCoinMarket(country: "usd",page: pagination,limit: limit, order: "market_cap_desc")
+        viewModel.getCoinMarket(country: currency,page: pagination,limit: limit, order: sort)
     }
 
     func onFinishLoadData(data: [CoinMarketResponse]) {
-        self.dismiss(animated: true, completion: nil)
+        dismissLoading()
         self.lblEmptyData.isHidden = true
         self.paginationView.hideLoading()
         
         self.isLoading = false
         self.listTableView.isHidden = false
-        if page == 0 {
+        if page == 1 {
             self.marketList = []
         } else {
             self.page += 1
@@ -82,6 +103,46 @@ class ViewController: BaseViewController {
         self.lblEmptyData.isHidden = false
         Toast(text: msg, duration: Delay.short).show()
     }
+    
+    @IBAction func switchLang(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            updateLang(str: "en")
+            Localize.setCurrentLanguage("en")
+            currency = "usd"
+            showLoading()
+            fetchData(pagination: 0)
+            break
+        case 1:
+            updateLang(str: "id")
+            Localize.setCurrentLanguage("id")
+            currency = "idr"
+            showLoading()
+            fetchData(pagination: 0)
+            break
+        default:
+            break
+        }
+    }
+    
+    func updateLang(str : String) {
+        lblName.text = "name".localized(lang: str)
+        lblLastPrice.text = "last_price".localized(lang: str)
+        lblPriceChange.text = "24h_change".localized(lang: str)
+    }
+    
+    
+    @IBAction func btnSort(_ sender: Any) {
+        if sort == "market_cap_desc" {
+            sort = "market_cap_asc"
+        } else {
+            sort = "market_cap_desc"
+        }
+
+        showLoading()
+        fetchData(pagination: page)
+    }
+    
 }
 
 extension ViewController : UITableViewDataSource, UITableViewDelegate {
@@ -92,7 +153,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoinViewCell", for: indexPath) as! CoinViewCell
-        cell.setupData(data: marketList[indexPath.row])
+        cell.setupData(data: marketList[indexPath.row], currency: currency)
         cell.selectionStyle = .none
         return cell
     }
@@ -112,6 +173,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
             isLoading = true
             paginationView.showLoading()
             page += 1
+            setLocalizeData()
             fetchData(pagination: page)
         }
     }

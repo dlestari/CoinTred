@@ -11,6 +11,8 @@
 		0416B12A27EF75AB00601E7F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0416B12827EF75AB00601E7F /* DetailViewController.xib */; };
 		044862C227DF83BC00EDA842 /* CoinMarketModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044862C127DF83BC00EDA842 /* CoinMarketModelResponse.swift */; };
 		044862C427DF8AC700EDA842 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044862C327DF8AC700EDA842 /* MarketViewModel.swift */; };
+		04510FAA281C2DEA00290A6C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04510FAC281C2DEA00290A6C /* Localizable.strings */; };
+		04510FB0281D030D00290A6C /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04510FAF281D030D00290A6C /* LocalizedString.swift */; };
 		047AA73727E21D46002EDAFB /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AA73627E21D46002EDAFB /* Extention.swift */; };
 		04B262D428192B3F00371954 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B262D328192B3F00371954 /* BaseViewController.swift */; };
 		04CE21A427DCB41C001396BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE21A327DCB41C001396BA /* AppDelegate.swift */; };
@@ -33,6 +35,12 @@
 		0416B12827EF75AB00601E7F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		044862C127DF83BC00EDA842 /* CoinMarketModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketModelResponse.swift; sourceTree = "<group>"; };
 		044862C327DF8AC700EDA842 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		04510FA4281C2D5C00290A6C /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		04510FA5281C2D5C00290A6C /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		04510FA7281C2D7D00290A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		04510FAB281C2DEA00290A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04510FAD281C2DFB00290A6C /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		04510FAF281D030D00290A6C /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		047AA73627E21D46002EDAFB /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		04B262D328192B3F00371954 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04CE21A027DCB41C001396BA /* CoinTred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTred.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04510FAE281C2E3800290A6C /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				04510FAC281C2DEA00290A6C /* Localizable.strings */,
+				04510FAF281D030D00290A6C /* LocalizedString.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		047AA73527E21D2F002EDAFB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +112,7 @@
 		04CE21A227DCB41C001396BA /* CoinTred */ = {
 			isa = PBXGroup;
 			children = (
+				04510FAE281C2E3800290A6C /* Strings */,
 				047AA73527E21D2F002EDAFB /* Helper */,
 				04CE21BF27DCE2DD001396BA /* Base */,
 				04CE21C827DCF281001396BA /* Services */,
@@ -227,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 04CE219727DCB41C001396BA;
 			productRefGroup = 04CE21A127DCB41C001396BA /* Products */;
@@ -244,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CE21B027DCB41F001396BA /* LaunchScreen.storyboard in Resources */,
+				04510FAA281C2DEA00290A6C /* Localizable.strings in Resources */,
 				0416B12A27EF75AB00601E7F /* DetailViewController.xib in Resources */,
 				04CE21BE27DCCFDE001396BA /* CoinViewCell.xib in Resources */,
 				04CE21AD27DCB41F001396BA /* Assets.xcassets in Resources */,
@@ -310,6 +330,7 @@
 				04B262D428192B3F00371954 /* BaseViewController.swift in Sources */,
 				044862C427DF8AC700EDA842 /* MarketViewModel.swift in Sources */,
 				04CE21A427DCB41C001396BA /* AppDelegate.swift in Sources */,
+				04510FB0281D030D00290A6C /* LocalizedString.swift in Sources */,
 				044862C227DF83BC00EDA842 /* CoinMarketModelResponse.swift in Sources */,
 				04F308C728016BCC00A3A798 /* LoadingView.swift in Sources */,
 				04CE21A627DCB41C001396BA /* SceneDelegate.swift in Sources */,
@@ -319,10 +340,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		04510FAC281C2DEA00290A6C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04510FAB281C2DEA00290A6C /* en */,
+				04510FAD281C2DFB00290A6C /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		04CE21A927DCB41C001396BA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				04CE21AA27DCB41C001396BA /* Base */,
+				04510FA4281C2D5C00290A6C /* id */,
+				04510FA7281C2D7D00290A6C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -331,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04CE21AF27DCB41F001396BA /* Base */,
+				04510FA5281C2D5C00290A6C /* id */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -403,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

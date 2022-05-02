@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  CoinTred
+
+  Created by MAC on 29/04/22.
+  
+*/
+
+"name" = "Nama";
+"last_price" = "Harga Terakhir";
+"24h_change" = "Perubahan 24j";
+"precentage" = "Presentase";
+"low_price" = "Harga Terendah";
+"high_price" = "Harga Tertinggi";
+"market_cap" = "Kapitalisasi Pasar";
+"market_cap_rank" = "Peringkat Kapitalisasi Pasar";

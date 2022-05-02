@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3rz-u3-HL1">
-                                <rect key="frame" x="0.0" y="164" width="414" height="698"/>
+                                <rect key="frame" x="0.0" y="171" width="414" height="691"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74H-UZ-j5l">
-                                <rect key="frame" x="0.0" y="118" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="135" width="414" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAd-sV-VDn">
                                         <rect key="frame" x="252" y="10" width="60" height="16"/>
@@ -48,6 +48,7 @@
                                     <constraint firstItem="qDY-Vt-BQR" firstAttribute="centerY" secondItem="74H-UZ-j5l" secondAttribute="centerY" id="7P5-lZ-xDB"/>
                                     <constraint firstItem="il8-Bn-TzK" firstAttribute="leading" secondItem="74H-UZ-j5l" secondAttribute="leading" constant="16" id="Fa2-gw-Dt3"/>
                                     <constraint firstAttribute="height" constant="36" id="RhI-PI-Zmi"/>
+                                    <constraint firstItem="PAd-sV-VDn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="il8-Bn-TzK" secondAttribute="trailing" constant="8" symbolic="YES" id="UG9-QD-8YD"/>
                                     <constraint firstItem="il8-Bn-TzK" firstAttribute="centerY" secondItem="74H-UZ-j5l" secondAttribute="centerY" id="bLs-sO-dO8"/>
                                     <constraint firstItem="PAd-sV-VDn" firstAttribute="centerY" secondItem="74H-UZ-j5l" secondAttribute="centerY" id="hCl-b9-NJC"/>
                                     <constraint firstAttribute="trailing" secondItem="qDY-Vt-BQR" secondAttribute="trailing" constant="8" id="vfj-mE-paE"/>
@@ -60,25 +61,57 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxr-Q1-qS3">
+                                <rect key="frame" x="20" y="104" width="49.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="szG-xH-h0p"/>
+                                </constraints>
+                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.up.arrow.down.square" catalog="system" title=" "/>
+                                <connections>
+                                    <action selector="btnSort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9W9-XD-kc0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3rz-u3-HL1" firstAttribute="top" secondItem="74H-UZ-j5l" secondAttribute="bottom" constant="10" id="2V9-5z-WPC"/>
+                            <constraint firstItem="3rz-u3-HL1" firstAttribute="top" secondItem="74H-UZ-j5l" secondAttribute="bottom" id="2V9-5z-WPC"/>
+                            <constraint firstItem="fxr-Q1-qS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GaZ-cG-cbj"/>
                             <constraint firstItem="l2x-hi-00k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GdU-zl-cIx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3rz-u3-HL1" secondAttribute="trailing" id="Ihe-e3-cJW"/>
                             <constraint firstItem="3rz-u3-HL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NWO-Qm-5hR"/>
                             <constraint firstItem="74H-UZ-j5l" firstAttribute="leading" secondItem="3rz-u3-HL1" secondAttribute="leading" id="T8P-Qk-QLW"/>
-                            <constraint firstItem="74H-UZ-j5l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="XMc-7c-6ax"/>
+                            <constraint firstItem="fxr-Q1-qS3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Wpw-oX-lvz"/>
+                            <constraint firstItem="74H-UZ-j5l" firstAttribute="top" secondItem="fxr-Q1-qS3" secondAttribute="bottom" constant="16" id="k4B-pd-atq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3rz-u3-HL1" secondAttribute="bottom" id="koH-Bx-EPx"/>
                             <constraint firstItem="74H-UZ-j5l" firstAttribute="trailing" secondItem="3rz-u3-HL1" secondAttribute="trailing" id="tON-Jd-48V"/>
                             <constraint firstItem="l2x-hi-00k" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wgo-bT-JIF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Market" id="hDM-Lf-DQX"/>
+                    <navigationItem key="navigationItem" title="Market" id="hDM-Lf-DQX">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Qo2-jo-iVZ">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="zu2-fw-aAY">
+                                <rect key="frame" x="302" y="5.5" width="92" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="EN"/>
+                                    <segment title="ID"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchLang:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lg8-HU-0w0"/>
+                                </connections>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblEmptyData" destination="l2x-hi-00k" id="rLx-2M-Zy3"/>
+                        <outlet property="lblLastPrice" destination="PAd-sV-VDn" id="Jgw-3i-YlY"/>
+                        <outlet property="lblName" destination="il8-Bn-TzK" id="yjE-GX-qMq"/>
+                        <outlet property="lblPriceChange" destination="qDY-Vt-BQR" id="zge-R8-Rib"/>
                         <outlet property="listTableView" destination="3rz-u3-HL1" id="dGO-Vs-TZ5"/>
+                        <outlet property="switchLang" destination="zu2-fw-aAY" id="M9L-74-xHO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,6 +138,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.up.arrow.down.square" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -49,6 +49,7 @@ public struct MarketDetail: Decodable {
 
 public struct Language: Decodable {
     let en: String
+    let id: String
 }
 
 public struct Precentage: Decodable {
