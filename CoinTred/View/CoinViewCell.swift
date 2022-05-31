@@ -31,19 +31,9 @@ class CoinViewCell: UITableViewCell {
     
     func setupData(data : CoinMarketResponse, currency : String) {
         let percentage24h = data.price_change_percentage_24h ?? 0
-        let currentPrice = data.current_price ?? 0
         lblCoinName.text = data.name ?? ""
         lblSymbol.text = data.symbol?.uppercased()
-        
-        if currentPrice < 1 {
-            lblPrice.text = "$\(data.current_price ?? 0) "
-        } else {
-            if currency == "usd" {
-                lblPrice.text = data.current_price?.convertToCurrency()
-            } else {
-                lblPrice.text = data.current_price?.convertToRpCurrency()
-            }
-        }
+        lblPrice.text = data.current_price?.convertToCurrency()
         lblChange24h.text = "\(String(format: "%.2f", percentage24h))" + "%"
         if percentage24h < 0 {
             container24h.backgroundColor = UIColor.red

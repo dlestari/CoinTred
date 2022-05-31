@@ -58,26 +58,10 @@ class DetailViewController: BaseViewController {
         lblName.text = dt.name
         lblSymbol.text = dt.symbol?.uppercased()
         lblMarketRankValue.text = "\(dt.market_cap_rank ?? 0)"
-        if Localize.currentLanguage() == "en" {
-            lblMarketCapValue.text = dt.market_cap?.convertToCurrency()
-            lblLowPriceValue.text = dt.low_24h?.convertToCurrency()
-            lblHighPriceValue.text = dt.high_24h?.convertToCurrency()
-        } else {
-            lblMarketCapValue.text = dt.market_cap?.convertToRpCurrency()
-            lblLowPriceValue.text = dt.low_24h?.convertToRpCurrency()
-            lblHighPriceValue.text = dt.high_24h?.convertToRpCurrency()
-        }
-        
-        let currentPrice = data?.current_price ?? 0
-        if currentPrice < 1 {
-            lblPrice.text = "$\(data?.current_price ?? 0) "
-        } else {
-            if Localize.currentLanguage() == "en" {
-                lblPrice.text = data?.current_price?.convertToCurrency()
-            } else {
-                lblPrice.text = data?.current_price?.convertToRpCurrency()
-            }
-        }
+        lblMarketCapValue.text = dt.market_cap?.convertToCurrency()
+        lblLowPriceValue.text = dt.low_24h?.convertToCurrency()
+        lblHighPriceValue.text = dt.high_24h?.convertToCurrency()
+        lblPrice.text = data?.current_price?.convertToCurrency()
         
         change24h = dt.price_change_percentage_24h ?? 0
         lblPricePrecentage.text = "\(String(format: "%.2f", change24h))" + "%"
@@ -92,12 +76,10 @@ class DetailViewController: BaseViewController {
     }
 
     func getDetail() {
-//        showLoading()
         viewModel.getMarketDetail(id: coinId)
     }
   
     func onFinishLoadMarketDetail(data: MarketDetail) {
-//        dismissLoading()
         self.lblPricePrecentage.text = "\(String(format: "%.2f", change24h))" + "%"
         self.change24h = data.market_data.price_change_percentage_24h ?? 0
         self.change7d = data.market_data.price_change_percentage_7d ?? 0
